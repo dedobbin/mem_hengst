@@ -1,6 +1,6 @@
 # mem_hengst
-Allows a user to read and write memory process on a Linux system. 
-**Note:** Currently always uses `process_vm_writev` and `process_vm_readv` syscalls, which are nonstandard  extensions.
+Library that allows a user to read and write memory process on a Linux system.  
+**Note:** Currently always uses `process_vm_writev` and `process_vm_readv` syscalls, which are nonstandard Linux extensions.
 
 ## Install
 ```
@@ -9,7 +9,7 @@ sudo make install
 ```
 To link against, use `-lmem_hengst`
 
-## Usage 
+## Example usage in a program 
 
 ```
 std::vector<mem_hengst::Proc_map_entry> mem_map = mem_hengst::get_proc_map_entries(some_pid);
