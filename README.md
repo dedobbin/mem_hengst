@@ -1,6 +1,6 @@
 # mem_hengst
 Library that allows a user to read and write memory process on a Linux system.  
-**Note:** Currently always uses `process_vm_writev` and `process_vm_readv` syscalls, which are nonstandard Linux extensions.
+**Note:** Currently uses `process_vm_writev` and `process_vm_readv` syscalls, which are nonstandard Linux extensions.
 
 ## Install
 ```
